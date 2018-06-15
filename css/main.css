@@ -46,35 +46,36 @@ img:hover {
 	margin:0 8px;
 	line-height: 80px;
 }
-.text-focus-in {
-  -webkit-animation: text-focus-in 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-          animation: text-focus-in 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
-@-webkit-keyframes text-focus-in {
+@-webkit-keyframes tracking-in-expand {
   0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
+    letter-spacing: -0.5em;
     opacity: 0;
   }
+  40% {
+    opacity: 0.6;
+  }
   100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
     opacity: 1;
   }
 }
-@keyframes text-focus-in {
+@keyframes tracking-in-expand {
   0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
+    letter-spacing: -0.5em;
     opacity: 0;
   }
+  40% {
+    opacity: 0.6;
+  }
   100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
     opacity: 1;
   }
 }
+
 
 @media screen and (max-width:600px) {
   .logo {
@@ -183,7 +184,11 @@ h3 {
   background: rgba(0, 0, 0, 0.25);
 }
 
-/* Styling for element used in example */
+/******************************************
+/* FANCY BOX
+/*******************************************/
+
+/* Munker White */
 
 #munker-white {
   margin: 0;
@@ -198,6 +203,24 @@ h3 {
 }
 
 #munker-white a {
+  color: #fff;
+}
+
+/* Herman Grid */
+
+#hermann-grid {
+  margin: 0;
+  position: relative;
+  background: transparent;
+  color: #fff;
+  padding: 6em 10vw;
+  line-height: 2;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#hermann-grid a {
   color: #fff;
 }
 
@@ -249,13 +272,23 @@ line-height: 43px;
 }
 
 .btn.feature {
-	top:190px;
-  left:150px;
-  width: 300px;
+	top:280px;
+  left:235px;
+  width: 140px;
   height: 45px;
   text-align: center;
   color:white;
 }
+
+.btn.rect {
+  top:280px;
+  left:235px;
+  width: 140px;
+  height: 45px;
+  text-align: center;
+  color:white;
+}
+
 /******************************************
 /* MORPHING CONTENT                
 /*******************************************/
@@ -486,9 +519,9 @@ line-height: 43px;
   	background-size: 300% 300%;
   	box-sizing: border-box;
   	display: table;
-  	height: 30vh;
-  	margin: 0;
-    padding-top: 100px;
+  	height: 70vh;
+  	margin-top:60px;
+    padding-top: 150px;
   	position: relative;
   	width: 100vw;
 	  -webkit-animation: Rainbow 25s ease infinite;
@@ -504,6 +537,66 @@ line-height: 43px;
   100% {
     background-position: 94% 0%; } }
 
+}
+
+
+/******************************************
+/* SHARING BUTTONS
+/*******************************************/
+#share {
+  width: 100%;
+  text-align: center;
+  padding-left: 100px;
+  margin-top:200px;
+}
+
+/* buttons */
+
+#share a {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 8px;
+  padding-right:40px;
+  margin-top:40px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #fff;
+  opacity: 0.75;
+  transition: opacity 0.15s linear;
+}
+
+#share a:hover {
+  opacity: 1;
+}
+
+/* icons */
+
+#share i {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.facebook {
+  background: #3b5998;
+}
+
+.twitter {
+    background: #55acee;
+}
+
+.googleplus {
+    background: #dd4b39;
+}
+
+.linkedin {
+    background: #0077b5;
+}
+
+.pinterest {
+    background: #cb2027;
 }
 
 
@@ -527,6 +620,8 @@ line-height: 43px;
 .is-visible {
      display: block;
 }
+
+
 
 
 /******************************************
