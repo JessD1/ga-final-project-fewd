@@ -20,10 +20,10 @@ Author: Your Name
 img {
 	display:block;
 	max-width:100%;
-	margin:0;
-	padding:10px;
+	margin:0px;
 	transition: all 3s ease;
 	overflow: hidden;
+  Padding:8px;
 }
 
 img:hover {
@@ -45,6 +45,35 @@ img:hover {
 	padding:10px 0px;
 	margin:0 8px;
 	line-height: 80px;
+}
+.text-focus-in {
+  -webkit-animation: text-focus-in 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          animation: text-focus-in 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width:600px) {
@@ -80,6 +109,7 @@ h3 {
   display: inline-block;
   position: relative;
   text-align: center;
+  position:absolute; top:0;
 }
 
 .morphing-btn {
@@ -155,7 +185,7 @@ h3 {
 
 /* Styling for element used in example */
 
-#morphing-content {
+#munker-white {
   margin: 0;
   position: relative;
   background: transparent;
@@ -167,7 +197,7 @@ h3 {
   backface-visibility: hidden;
 }
 
-#morphing-content a {
+#munker-white a {
   color: #fff;
 }
 
@@ -207,13 +237,14 @@ line-height: 43px;
   top:110px;
   left:80px;
   text-align: center;
-  line-height: 35px;
+  line-height: 45px;
+  text-decoration: none; 
   }
 
 .btn:hover {
   background-color: #ffabab;
   box-shadow: 0px 15px 20px rgba(75, 75, 74, 0.4);
-  color: #fff;
+  color: white;
   transform: translateY(-7px);
 }
 
@@ -223,6 +254,7 @@ line-height: 43px;
   width: 300px;
   height: 45px;
   text-align: center;
+  color:white;
 }
 /******************************************
 /* MORPHING CONTENT                
@@ -274,6 +306,7 @@ line-height: 43px;
   padding: 1em 2em;
   background: none;
   vertical-align: middle;
+  text-align: center;
   position: relative;
   z-index: 1;
   color: #c5e4e8;
@@ -293,7 +326,7 @@ line-height: 43px;
   right: -20px;
   bottom: -20px;
   opacity: 0;
-  color:#4b4b4a;
+  color:white;
   z-index: -1;
 }
 
@@ -304,6 +337,7 @@ line-height: 43px;
   left: 0;
   right: 0;
   bottom: 0;
+  color:white;
 }
 
 .button-cta,
@@ -316,7 +350,7 @@ line-height: 43px;
 
 .button-cta:hover {
   border: 4px solid #c5e4e8;
-  color:#c5e4e8;
+  color:white;
 }
 
 @media screen and (max-width:600px) {
