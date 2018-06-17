@@ -185,44 +185,9 @@ h3 {
 }
 
 /******************************************
-/* FANCY BOX
+/* FANCY BOX OPEN
 /*******************************************/
 
-/* Munker White */
-
-#munker-white {
-  margin: 0;
-  position: relative;
-  background: transparent;
-  color: #fff;
-  padding: 6em 10vw;
-  line-height: 2;
-  z-index: 3;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-#munker-white a {
-  color: #fff;
-}
-
-/* Herman Grid */
-
-#hermann-grid {
-  margin: 0;
-  position: relative;
-  background: transparent;
-  color: #fff;
-  padding: 6em 10vw;
-  line-height: 2;
-  z-index: 3;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-#hermann-grid a {
-  color: #fff;
-}
 
 /*.btn {
 
@@ -280,7 +245,7 @@ line-height: 43px;
   color:white;
 }
 
-.btn.rect {
+.btn.long {
   top:280px;
   left:235px;
   width: 140px;
@@ -293,7 +258,48 @@ line-height: 43px;
 /* MORPHING CONTENT                
 /*******************************************/
 
+#close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
 
+
+/* Munker White */
+
+#munker-white {
+  margin: 0;
+  position: relative;
+  background: transparent;
+  color: #fff;
+  padding: 6em 10vw;
+  line-height: 2;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#munker-white a {
+  color: #fff;
+}
+
+/* Herman Grid */
+
+#hermann-grid {
+  margin: 0;
+  position: relative;
+  background: transparent;
+  color: #fff;
+  padding: 6em 10vw;
+  line-height: 2;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#hermann-grid a {
+  color: #fff;
+}
 
 /******************************************
 /* HEADER                  
@@ -458,8 +464,9 @@ line-height: 43px;
 
 
 
-.section {
+section p {
 	padding:0px 0;
+  margin:0 auto;
 }
 
 .site-content {
@@ -573,8 +580,9 @@ line-height: 43px;
 /* icons */
 
 #share i {
-    position: relative;
-    top: 50%;
+    display:inline-block;
+    top: 40%;
+    left:20%;
     transform: translateY(-50%);
 }
 
@@ -599,6 +607,12 @@ line-height: 43px;
     background: #cb2027;
 }
 
+.copyright {
+  margin-left:40px;
+  margin-top:50px;
+  font-family: 'Lato', sans-serif;
+  color:#4b4b4a;
+}
 
 /******************************************
 /* HELPER CLASSES
