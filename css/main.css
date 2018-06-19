@@ -33,7 +33,6 @@ img:hover {
 	 background-image: linear-gradient(bottom, rgb(68,68,68) 5%, rgb(51,51,51) 100%);
 }
 
-
 /******************************************
 /* TYPOGRAPHY
 /*******************************************/
@@ -85,8 +84,13 @@ img:hover {
 
 p {
 	font-family: 'Lato', sans-serif;
-	padding-bottom:40px;
 	color:#4b4b4a;
+}
+
+@media screen and (max-width:600px) {
+  p {
+   font-size:16px;
+  }
 }
 
 
@@ -96,12 +100,12 @@ h1 {
 	font-size:40px;
 }
 
-h3 {
-	color:white;
-	font-family: 'Lato', sans-serif;
-	font-size:16px;
-	padding:3px;
+@media screen and (max-width:600px) {
+  h1 {
+   font-size:30px;
+  }
 }
+
 /******************************************
 /* FANCY BOX
 /*******************************************/
@@ -182,6 +186,9 @@ h3 {
 
 .fancybox-morphing .fancybox-button--close:hover {
   background: rgba(0, 0, 0, 0.25);
+}
+
+.fancybox-morphing {
 }
 
 /******************************************
@@ -321,12 +328,9 @@ line-height: 43px;
 	color:#fff;
 }
 
-.section {
-	width:1200px;
-	margin:0 auto;
-	color:#ecf0ef;
+.hidden {
+  display:none;
 }
-
 /******************************************
 /* BUTTONS                  
 /*******************************************/
@@ -412,7 +416,6 @@ line-height: 43px;
 }
 
 
-
 /******************************************
 /* GRID                
 /*******************************************/
@@ -443,6 +446,7 @@ line-height: 43px;
 
 }
 
+
 .grid-whole         { width:100%;
   					overflow: hidden;}
 
@@ -464,11 +468,6 @@ line-height: 43px;
 
 
 
-section p {
-	padding:0px 0;
-  margin:0 auto;
-}
-
 .site-content {
 
 }
@@ -483,7 +482,6 @@ section p {
 	background-image: linear-gradient(#2a36bf, #0e21aa);
 	background-size:cover;
 	height:400px;
-
 	color:#fff;
 	text-align:center;
 }
@@ -500,6 +498,12 @@ section p {
   -webkit-animation: Rainbow 25s ease infinite;
   -moz-animation: Rainbow 25s ease infinite;
   animation: Rainbow 25s ease infinite;
+}
+
+@media screen and (max-width:600px) {
+  .hero {
+  height: 40vh;
+  }
 }
 
 @-webkit-keyframes Rainbow {
@@ -536,6 +540,8 @@ section p {
 	  animation: Rainbow 25s ease infinite;
 }
 
+
+
 @-webkit-keyframes Rainbow {
   0% {
     background-position: 94% 0%; }
@@ -552,26 +558,31 @@ section p {
 /*******************************************/
 #share {
   width: 100%;
-  text-align: center;
-  padding-left: 100px;
-  margin-top:200px;
+    margin: 100px auto;
+    text-align: center;
 }
 
 /* buttons */
 
 #share a {
   width: 50px;
-  height: 50px;
-  display: inline-block;
-  margin: 8px;
-  padding-right:40px;
-  margin-top:40px;
-  border-radius: 50%;
-  font-size: 24px;
-  color: #fff;
+    height: 50px;
+    display: inline-block;
+    margin: 8px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
   opacity: 0.75;
   transition: opacity 0.15s linear;
 }
+
+@media screen and (max-width:600px) {
+  #share a  {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 
 #share a:hover {
   opacity: 1;
@@ -580,31 +591,40 @@ section p {
 /* icons */
 
 #share i {
-    display:inline-block;
-    top: 40%;
-    left:20%;
+    position: relative;
+    top: 48%;
+    left:26%;
     transform: translateY(-50%);
 }
 
+@media screen and (max-width:600px) {
+  #share i  {
+    position: relative;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* colors */
 
 .facebook {
-  background: #3b5998;
+  background: #4b4b4a;
 }
 
 .twitter {
-    background: #55acee;
+    background: #4b4b4a;
 }
 
-.googleplus {
-    background: #dd4b39;
+.instagram {
+    background: #4b4b4a;
 }
 
 .linkedin {
-    background: #0077b5;
+    background: #4b4b4a;
 }
 
 .pinterest {
-    background: #cb2027;
+    background: #4b4b4a;
 }
 
 .copyright {
@@ -634,9 +654,6 @@ section p {
 .is-visible {
      display: block;
 }
-
-
-
 
 /******************************************
 /* ADDITIONAL STYLES                   
