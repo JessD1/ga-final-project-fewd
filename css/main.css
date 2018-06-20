@@ -8,7 +8,7 @@ Author: Your Name
 /* COLOURS
 /*******************************************/
 
-/* add a list of colours used in the project */
+/* logo and fancy box /*
 
 /******************************************
 /* SENSIBLE DEFAULTS                   
@@ -304,8 +304,46 @@ line-height: 43px;
   backface-visibility: hidden;
 }
 
+#ponzo2 {
+  margin: 0;
+  position: relative;
+  background: transparent;
+  color: #fff;
+  padding: 6em 10vw;
+  line-height: 2;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hermann-square {
+  height:60px;
+  width:60px;
+  background-color:#4b4b4a;
+
+}
+
 #hermann-grid a {
   color: #fff;
+}
+
+
+
+.hidden h1 {
+  padding:10px;
+  text-align:left;
+  line-height:30px;
+  font-size:30px;
+}
+
+.hidden p {
+  padding:10px;
+  text-align:left;
+}
+
+.hidden img {
+  height:200px;
+  width:200px;
 }
 
 /******************************************
