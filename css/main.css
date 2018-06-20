@@ -8,7 +8,7 @@ Author: Your Name
 /* COLOURS
 /*******************************************/
 
-/* add a list of colours used in the project */
+/* logo and fancy box /*
 
 /******************************************
 /* SENSIBLE DEFAULTS                   
@@ -265,14 +265,23 @@ line-height: 43px;
 /* MORPHING CONTENT                
 /*******************************************/
 
-#close-button {
-  position: absolute;
-  top: 12px;
-  right: 12px;
+.modal-content-heading {
+  text-align:left;
+  line-height:45px;
+  font-size:35px;
+  margin-top:90px;
+  margin-right:20px;
 }
 
+.modal-content-para {
+  margin-right:20px;
+  text-align:left;
+}
 
-/* Munker White */
+/******************************************
+/* Munker White 
+*******************************************/
+
 
 #munker-white {
   margin: 0;
@@ -290,7 +299,185 @@ line-height: 43px;
   color: #fff;
 }
 
-/* Herman Grid */
+.modal-content-munker-white {
+  background:#4b4b4a;
+  height:390px;
+  width:390px;
+  margin-left:40px;
+  margin-top:100px;
+  position:relative;
+}
+
+.green-row-one {
+  position:absolute;
+  height:30px;
+  width:340px;
+  z-index:1;
+  background:#f1f0d0;
+  border-radius:12px;
+  left:25px;
+  top:30px;
+}
+
+.green-row-two {
+  position:absolute;
+  height:30px;
+  width:340px;
+  z-index:1;
+  background:#f1f0d0;
+  border-radius:12px;
+  left:25px;
+  top:90px;
+}
+
+.green-row-three {
+  position:absolute;
+  height:30px;
+  width:340px;
+  z-index:1;
+  background:#f1f0d0;
+  border-radius:12px;
+  left:25px;
+  top:150px;
+}
+
+.green-row-four {
+  position:absolute;
+  height:30px;
+  width:340px;
+  z-index:1;
+  background:#f1f0d0;
+  border-radius:12px;
+  left:25px;
+  top:210px;
+}
+
+.green-row-five {
+  position:absolute;
+  height:30px;
+  width:340px;
+  z-index:1;
+  background:#f1f0d0;
+  border-radius:12px;
+  left:25px;
+  top:270px;
+}
+
+.green-row-six {
+  position:absolute;
+  height:30px;
+  width:340px;
+  z-index:1;
+  background:#f1f0d0;
+  border-radius:12px;
+  left:25px;
+  top:330px;
+}
+
+
+.pink-row-one {
+  position:absolute;
+  height:30px;
+  width:90px;
+  z-index:2;
+  background:#efc7d8;
+  right:25px;
+  top:30px
+}
+
+.dark-pink-row-one {
+  position:absolute;
+  height:30px;
+  width:90px;
+  z-index:2;
+  background:#efc7d8;
+  left:60px;
+  top:30px;
+}
+
+.modal-content-munker-white:hover .dark-pink-row-one {
+  transform: translateX(99%);
+  transition-duration: 2s;
+}
+.modal-content-munker-white:hover .dark-pink-row-two {
+  transform: translateX(99%);
+  transition-duration: 2s;
+}
+.modal-content-munker-white:hover .dark-pink-row-three {
+  transform: translateX(99%);
+  transition-duration: 2s;
+}
+.modal-content-munker-white:hover .dark-pink-row-four {
+  transform: translateX(99%);
+  transition-duration: 2s;
+}
+.modal-content-munker-white:hover .dark-pink-row-five {
+  transform: translateX(99%);
+  transition-duration: 2s;
+}
+.modal-content-munker-white:hover .dark-pink-row-six{
+  transform: translateX(99%);
+  transition-duration: 2s;
+}
+
+.modal-content-munker-white:hover .pink-row-one {
+  transform: translateX(-113%);
+  transition-duration: 2s;
+}
+
+.dark-pink-row-two {
+  position:absolute;
+  height:30px;
+  width:90px;
+  z-index:2;
+  background:#efc7d8;
+  left:60px;
+  top:90px;
+}
+
+.dark-pink-row-three {
+  position:absolute;
+  height:30px;
+  width:90px;
+  z-index:2;
+  background:#efc7d8;
+  left:60px;
+  top:150px;
+}
+
+.dark-pink-row-four {
+  position:absolute;
+  height:30px;
+  width:90px;
+  z-index:2;
+  background:#efc7d8;
+  left:60px;
+  top:210px;
+}
+
+.dark-pink-row-five {
+  position:absolute;
+  height:30px;
+  width:90px;
+  z-index:2;
+  background:#efc7d8;
+  left:60px;
+  top:270px;
+}
+
+.dark-pink-row-six {
+  position:absolute;
+  height:30px;
+  width:90px;
+  z-index:2;
+  background:#efc7d8;
+  left:60px;
+  top:330px;
+}
+
+/******************************************
+/* Hermann Grid 
+*******************************************/
 
 #hermann-grid {
   margin: 0;
@@ -304,9 +491,43 @@ line-height: 43px;
   backface-visibility: hidden;
 }
 
-#hermann-grid a {
-  color: #fff;
+.hermann-grid-image {
+  width:390px;
+  height:390px;
+  position:relative;
+  transform:none !important;
+  margin-top:90px;
 }
+
+
+
+.black-circles {
+  z-index:2;
+  height:20px;
+  width:20px;
+  border-radius: 40px;
+  background:#b5b0b2;
+  position:absolute;
+  top:40px;
+  left:60px;
+
+}
+
+#ponzo2 {
+  margin: 0;
+  position: relative;
+  background: transparent;
+  color: #fff;
+  padding: 6em 10vw;
+  line-height: 2;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+
+
 
 /******************************************
 /* HEADER                  
@@ -457,7 +678,8 @@ line-height: 43px;
 					overflow: hidden; }
 
 .grid-half          { width:50%;
-  					overflow: hidden;}
+  					overflow: hidden;
+            position: relative;}
 
 
 .grid-third         { width:33.33%;
