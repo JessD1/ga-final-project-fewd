@@ -51,7 +51,7 @@
 					<div class="grid-row clearfix">
 						<div class="grid-column grid-half">
 							<img src="images/neckercube.png" alt="A cube that appears empty">
-							<a data-morphing data-src="#morphing-content" href="javascript:;" class="btn">OPEN</a>	
+							<a data-morphing data-src="#necker-cube" href="javascript:;" class="btn">OPEN</a>	
 						</div>
 						<div class="grid-column grid-half">
 							<img src="images/ebbinghaus3.png" alt="A graphic showing six blue circles surrounding one pink circle">
@@ -62,7 +62,7 @@
 
 					<div class="grid-column grid-half">
 						<img src="images/ponzo2.png" alt="A photograph of a railway track disappearing into the horizon with two horizontal pink lines intersecting the tracks.">
-						<a data-morphing data-src="#morphing-content" href="javascript:;" class="btn feature">OPEN</a>
+						<a data-morphing data-src="#ponzo" href="javascript:;" class="btn feature">OPEN</a>
 						<!--p tags here -->
 					</div>
 
@@ -202,11 +202,52 @@
 						<p class = "modal-content-para">Why does this work? Our perception of an area's lightness is influenced by the surroundings to which the area appears to belong.</p>
 					</div>
 					<div class="grid-column grid-half clearfix">
-						<img class= "hermann-grid-image" src="images/hermanngrid.png" alt="A five by five grid of squares">
-							<div class= "black-circles">
-							</div>
+						<div class="modal-content-hermann-grid">
+							<img class= "hermann-grid-image" src="images/hermanngrid.png" alt="A five by five grid of squares">
+								<div class= "grey-circle-one"></div>
+								<div class= "grey-circle-two"></div>
+								<div class= "grey-circle-three"></div>
+								<div class= "grey-circle-four"></div>
+						</div>
 					</div>
-</section>
+			</section>
+
+			<section id="necker-cube" class="hidden">
+						<div class="grid-row-one clearfix">
+							<div class="grid-column grid-half">
+								<h1 class= "modal-content-heading">Is A or B the front of the cube?</h1>
+								<p class= "modal-content-para">The Necker cube is an optical illusion first published as a rhomboid in 1832 by Swiss crystallographer Louis Albert Necker.</p> 
+
+								<p class="modal-content-para">It is a simple wire-frame drawing of a cube with no visual cues as to its orientation. In the case of this cube, you could interpret either the  to have either the upper right (A) or the lower-left(B) square as its front side.</p>
+
+								<p class = "modal-content-para"><strong>Hover over the image to reveal the front of the cube.</p></strong></p>
+							</div>
+							<div class="grid-column grid-half clearfix">
+								<div class="modal-content-necker-cube">
+									<img class= "necker-cube-image" src="images/neckercube.png" alt="A five by five grid of squares">
+									 <div class="necker-cube-skew"></div>
+								</div>
+							</div>
+					</section>
+
+						<section id="ponzo" class="hidden">
+						<div class="grid-row-one clearfix">
+							<div class="grid-column grid-half">
+								<h1 class= "modal-content-heading">Is A or B the front of the cube?</h1>
+								<p class= "modal-content-para">The Necker cube is an optical illusion first published as a rhomboid in 1832 by Swiss crystallographer Louis Albert Necker.</p> 
+
+								<p class="modal-content-para">It is a simple wire-frame drawing of a cube with no visual cues as to its orientation. In the case of this cube, you could interpret either the  to have either the upper right (A) or the lower-left(B) square as its front side.</p>
+
+								<p class = "modal-content-para"><strong>Hover over the image to reveal the front of the cube.</p></strong></p>
+							</div>
+							<div class="grid-column grid-half clearfix">
+								<div class="modal-content-ponzo">
+									<img class= "ponzo-image" src="images/ponzo2.png" alt="A five by five grid of squares">
+									 <div class="necker-cube-skew"></div>
+								</div>
+							</div>
+					</section>
+
 
 			<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.js"></script>

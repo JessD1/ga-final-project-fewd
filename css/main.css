@@ -499,21 +499,171 @@ line-height: 43px;
   margin-top:90px;
 }
 
-
-
-.black-circles {
+.grey-circle-one {
   z-index:2;
-  height:20px;
-  width:20px;
+  height:18px;
+  width:18px;
   border-radius: 40px;
-  background:#b5b0b2;
+  background:#898989;
   position:absolute;
-  top:40px;
-  left:60px;
+  top:240px;
+  left:80px;
+  display:none;
+}
+
+.grey-circle-two {
+  z-index:2;
+  height:18px;
+  width:18px;
+  border-radius: 40px;
+  background:#898989;
+  position:absolute;
+  top:240px;
+  left:151px;
+  display:none;
+}
+
+.grey-circle-three {
+  z-index:2;
+  height:18px;
+  width:18px;
+  border-radius: 40px;
+  background:#898989;
+  position:absolute;
+  top:240px;
+  left:222px;
+  display:none;
+}
+
+.grey-circle-four {
+  z-index:2;
+  height:18px;
+  width:18px;
+  border-radius: 40px;
+  background:#898989;
+  position:absolute;
+  top:240px;
+  left:293px;
+  display:none;
+}
+
+
+.modal-content-hermann-grid:hover .grey-circle-one {
+  animation: pulse 5s infinite;
+  display:block;
+  transition-duration: 2s;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #898989;
+    transition-duration: 2s;
+  }
+  100% {
+    background-color: #FF4136;
+    transition-duration: 2s;
+  }
+}
+
+
+.modal-content-hermann-grid:hover .grey-circle-two {
+  animation: pulse 5s infinite;
+  display:block;
+  transition-duration: 2s;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #898989;
+    transition-duration: 2s;
+  }
+  100% {
+    background-color: #FF4136;
+    transition-duration: 2s;
+  }
+}
+
+.modal-content-hermann-grid:hover .grey-circle-three {
+  animation: pulse 5s infinite;
+  display:block;
+  transition-duration: 2s;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #898989;
+    transition-duration: 2s;
+  }
+  100% {
+    background-color: #FF4136;
+    transition-duration: 2s;
+  }
+}
+
+.modal-content-hermann-grid:hover .grey-circle-four {
+  animation: pulse 5s infinite;
+  display:block;
+  transition-duration: 2s;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #898989;
+    transition-duration: 2s;
+  }
+  100% {
+    background-color: #FF4136;
+    transition-duration: 2s;
+  }
+}
+
+/******************************************
+/* Necker Cube
+*******************************************/
+
+#necker-cube {
+  margin: 0;
+  position: relative;
+  background: transparent;
+  color: #fff;
+  padding: 6em 10vw;
+  line-height: 2;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 
 }
 
-#ponzo2 {
+.necker-cube-image {
+  width:390px;
+  height:390px;
+  position:relative;
+  transform:none !important;
+  margin-top:90px;
+}
+
+.necker-cube-skew {
+  background: rgba(197, 228, 232, 0.4);
+  height:160px;
+  width:140px;
+  transform: skew(-0deg, -15deg);
+  z-index: 1;
+  position: absolute;
+  top:185px;
+  left:70px;
+  display:none;
+}
+
+.modal-content-necker-cube:hover .necker-cube-skew {
+  display:block;
+}
+
+
+/******************************************
+/* Ponzo
+*******************************************/
+
+#ponzo {
   margin: 0;
   position: relative;
   background: transparent;
