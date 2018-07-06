@@ -2,13 +2,16 @@
 Project Name: Blank Template
 Client: Your Client
 Author: Your Name
-*/
+/*
 
 /******************************************
 /* COLOURS
 /*******************************************/
 
-/* logo and fancy box /*
+/*
+black: #4b4b4a
+bright pink: #f77272
+/*
 
 /******************************************
 /* SENSIBLE DEFAULTS                   
@@ -24,14 +27,16 @@ img {
 	transition: all 3s ease;
 	overflow: hidden;
   Padding:8px;
+  position:relative;
 }
 
 img:hover {
-	 transform:scale(1.1);
+	 transform:scale(1.05);
 	 overflow: hidden;
 	 cursor:pointer;
 	 background-image: linear-gradient(bottom, rgb(68,68,68) 5%, rgb(51,51,51) 100%);
 }
+
 
 /******************************************
 /* TYPOGRAPHY
@@ -89,7 +94,7 @@ p {
 
 @media screen and (max-width:600px) {
   p {
-   font-size:16px;
+   font-size:14px;
   }
 }
 
@@ -250,16 +255,27 @@ line-height: 43px;
   height: 45px;
   text-align: center;
   color:white;
+  position:absolute;
 }
 
 .btn.long {
   top:280px;
   left:235px;
-  width: 140px;
-  height: 45px;
+  width:140px;
+  height:45px;
   text-align: center;
   color:white;
+  position:absolute;
 }
+
+@media screen and (max-width:715px) {
+  .grid-column {
+   float:none;
+   width:100%;
+  }
+}
+
+
 
 /******************************************
 /* MORPHING CONTENT                
@@ -642,11 +658,12 @@ line-height: 43px;
   margin-top:90px;
 }
 
+
 .necker-cube-skew {
   background: rgba(197, 228, 232, 0.4);
   height:160px;
   width:140px;
-  transform: skew(-0deg, -15deg);
+  transform: skew(-0deg, -15deg) ;
   z-index: 1;
   position: absolute;
   top:185px;
@@ -656,8 +673,24 @@ line-height: 43px;
 
 .modal-content-necker-cube:hover .necker-cube-skew {
   display:block;
+  transform:5s ease;
 }
 
+.necker-cube-skew2 {
+  background: rgba(197, 228, 232, 0.4);
+  height:160px;
+  width:140px;
+  transform: skew(-0deg, -15deg);
+  z-index: 1;
+  position: absolute;
+  top:230px;
+  left:170px;
+  display:none;
+} 
+
+.modal-content-necker-cube:hover .necker-cube-skew2 {
+  display:block;
+}
 
 /******************************************
 /* Ponzo
@@ -675,9 +708,164 @@ line-height: 43px;
   backface-visibility: hidden;
 }
 
+.ponzo-image {
+  transform:none !important;
+  width:390px;
+  height:390px;
+  position:relative;
+  margin-top:90px;
+}
+
+.black-line {
+  height:100px;
+  width:10px;
+  background: #4b4b4a;
+  position:absolute;
+  top:240px;
+  right:228px;
+}
+
+.black-line2 {
+  height:100px;
+  width:10px;
+  background: #4b4b4a;
+  position: absolute;
+  top:240px;
+  left:136px;
+}
 
 
+.modal-content-ponzo:hover .black-line {
+  transform: translateX(-900%);
+  transition-duration: 2s;
+}
 
+
+.modal-content-ponzo:hover .black-line2 {
+  transform: translateX(900%);
+  transition-duration: 2s;
+}
+
+/*******************************************
+EBBINGHAUS
+********************************************/
+
+#ebbinghaus {
+  margin: 0;
+  position: relative;
+  background: transparent;
+  color: #fff;
+  padding: 6em 10vw;
+  line-height: 2;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.ebbinghaus-image {
+  width:390px;
+  height:390px;
+  position:relative;
+  transform:none !important;
+  margin-top:90px;
+}
+
+.ebbinghaus-circle {
+  position:absolute;
+  height:40px;
+  width:40px;
+  z-index:2;
+  border-radius: 30px;
+  background:#ffabab;
+  left:114px;
+  top:259px;
+}
+
+.ebbinghaus-circle2 {
+  position:absolute;
+  height:40px;
+  width:40px;
+  z-index:2;
+  border-radius: 30px;
+  background:#ffabab;
+  left:314px;
+  top:259px;
+}
+
+.modal-content-ebbinghaus:hover .ebbinghaus-circle  {
+  transform: translateX(500%);
+  transition-duration: 2s;
+}
+
+/******************************************
+/* TRIDENT                
+/*******************************************/
+
+#trident {
+  margin: 0;
+  position: relative;
+  background: transparent;
+  color: #fff;
+  padding: 6em 10vw;
+  line-height: 2;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.trident-image {
+  position:relative;
+  transform:none !important;
+  margin-top:90px;
+}
+
+/******************************************
+/* TRIDENT                
+/*******************************************/
+
+#goldensection {
+  margin: 0;
+  position: relative;
+  background: transparent;
+  color: #fff;
+  padding: 6em 10vw;
+  line-height: 2;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cornsweet-image {
+  position:relative;
+  transform:none !important;
+  margin-top:90px;
+}
+
+
+/******************************************
+/* CORNSWEET           
+/*******************************************/
+#cornsweet {
+  margin: 0;
+  position: relative;
+  background: transparent;
+  color: #fff;
+  padding: 6em 10vw;
+  line-height: 2;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cornsweet-square {
+  background: rgb(75,75,74);
+  background: linear-gradient(90deg, rgba(75,75,74,1) 0%, rgba(96,96,96,1) 100%);
+}
+
+.cornsweet-square2 {
+  background: rgb(75,75,74);
+  background: linear-gradient(90deg, rgba(96,96,96,1) 0%, rgba(75,75,74,1) 100%);
+}
 
 /******************************************
 /* HEADER                  
@@ -723,10 +911,10 @@ line-height: 43px;
   text-align: center;
   position: relative;
   z-index: 1;
-  color: #c5e4e8;
+  color: #9bd9dd;
   font-weight: bold;
   font-size: 16px;
-  border: 4px solid #c5e4e8;
+  border: 4px solid #9bd9dd;
   cursor:pointer;
   text-decoration:none;
 }
@@ -746,7 +934,7 @@ line-height: 43px;
 
 .button-cta:hover::after {
   opacity: 1;
-  background-color: #c5e4e8;
+  background-color: #9bd9dd;
   top: 0;
   left: 0;
   right: 0;
@@ -763,7 +951,7 @@ line-height: 43px;
 }
 
 .button-cta:hover {
-  border: 4px solid #c5e4e8;
+  border: 4px solid #9bd9dd;
   color:white;
 }
 
@@ -771,8 +959,9 @@ line-height: 43px;
   .button-cta {
   min-width: 80px;
   max-width: 80px;
-  height:30px;
+  height:40px;
   font-size: 10px;
+  line-height: 10px;
   }
 }
 
@@ -780,7 +969,7 @@ line-height: 43px;
 .title-button {
 	height:100px;
 	width:100px;
-	background:#c5e4e8;
+	background:#9bd9dd;
 	z-index:2;
 	padding:5px;
 	position:absolute;
@@ -792,8 +981,14 @@ line-height: 43px;
 /*******************************************/
 
 .grid-row {
-	max-width:100%;
+	With:500px;
 	margin:0 auto;
+}
+@media screen and (max-width:715px) {
+  .grid-column {
+   float:none;
+   width:100%;
+  }
 }
 
 .grid-row-one {
@@ -818,6 +1013,7 @@ line-height: 43px;
 }
 
 
+
 .grid-whole         { width:100%;
   					overflow: hidden;}
 
@@ -832,8 +1028,22 @@ line-height: 43px;
             position: relative;}
 
 
+
+@media screen and (max-width:690px) {
+  .grid-half {
+  width:100%;;
+  }
+}
+
+
 .grid-third         { width:33.33%;
 					overflow: hidden; }
+
+@media screen and (max-width:690px) {
+  .grid-third {
+  width:100%;;
+  }
+}
 
 .grid-quarter       { width:25%;
 					overflow: hidden; }
@@ -900,8 +1110,6 @@ line-height: 43px;
 .site-footer {
   	background: linear-gradient(225deg, #f0ccc9, #fae8d7, #f2f1d1, #c5e4e8, #f3dae3);
   	background-size: 300% 300%;
-  	box-sizing: border-box;
-  	display: table;
   	height: 70vh;
   	margin-top:60px;
     padding-top: 150px;
@@ -912,6 +1120,24 @@ line-height: 43px;
 	  animation: Rainbow 25s ease infinite;
 }
 
+.site-footer p {
+  margin-left: 20px;
+}
+
+.site-footer h1 {
+  margin-left: 20px;
+}
+
+@media screen and (max-width:1020px) {
+  .site-footer {
+  height: 70vh;
+  }
+}
+
+.copyright{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
 
 
 @-webkit-keyframes Rainbow {
@@ -932,6 +1158,8 @@ line-height: 43px;
   width: 100%;
     margin: 100px auto;
     text-align: center;
+    position: relative;
+    left:50px;
 }
 
 /* buttons */
@@ -965,7 +1193,7 @@ line-height: 43px;
 #share i {
     position: relative;
     top: 48%;
-    left:26%;
+    left:50px;
     transform: translateY(-50%);
 }
 
@@ -979,9 +1207,6 @@ line-height: 43px;
 
 /* colors */
 
-.facebook {
-  background: #4b4b4a;
-}
 
 .twitter {
     background: #4b4b4a;
@@ -992,10 +1217,6 @@ line-height: 43px;
 }
 
 .linkedin {
-    background: #4b4b4a;
-}
-
-.pinterest {
     background: #4b4b4a;
 }
 
