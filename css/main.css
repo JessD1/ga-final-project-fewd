@@ -303,19 +303,6 @@ h1 {
 }
 
 
-@media screen and (max-width:715px) {
-  .btn {
-   width:300px;
-   height:100px;
-   margin: 0 auto;
-   font-size:25px;
-   line-height:100px;
-   position: -webkit-sticky; /* Safari */
-    position: sticky;
-    
-  }
-}
-
 .btn.feature {
 	top: 280px;
   left: 235px;
@@ -336,15 +323,16 @@ h1 {
   }
 }
 
-.btn.long {
-  top:280px;
-  left:235px;
-  width:140px;
-  height:45px;
-  text-align: center;
-  color:white;
-  position:absolute;
+@media screen and (max-width:715px) {
+  .btn {
+   width:300px;
+   height:100px;
+   margin: 0 auto;
+   font-size:25px;
+   line-height:100px;
+  }
 }
+
 
 @media screen and (max-width:715px) {
   .grid-column {
@@ -901,7 +889,7 @@ EBBINGHAUS
 }
 
 /******************************************
-/* TRIDENT                
+/* GOLDEN SECTION               
 /*******************************************/
 
 #goldensection {
@@ -916,7 +904,7 @@ EBBINGHAUS
   backface-visibility: hidden;
 }
 
-.cornsweet-image {
+.golden-image {
   position:relative;
   transform:none !important;
   margin-top:90px;
@@ -939,16 +927,16 @@ EBBINGHAUS
 }
 
 .cornsweet-square {
-  height:100px;
-  width:300px;
+  height:500px;
+  width:100px;
   background: rgb(75,75,74);
   background: linear-gradient(90deg, rgba(75,75,74,1) 0%, rgba(96,96,96,1) 100%);
   display:inline-block;
 }
 
 .cornsweet-square2 {
-  height:100px;
-  width:300px;
+  height:500px;
+  width:100px;
   background: rgb(75,75,74);
   background: linear-gradient(90deg, rgba(96,96,96,1) 0%, rgba(75,75,74,1) 100%);
   display:inline-block;
@@ -970,6 +958,12 @@ EBBINGHAUS
   backface-visibility: hidden;
 }
 
+.paradox-image {
+  position:relative;
+  transform:none !important;
+  margin-top:90px;
+}
+
 /******************************************
 /* OVERSHOOTS
 /*******************************************/
@@ -984,6 +978,12 @@ EBBINGHAUS
   z-index: 3;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.overshoots-image {
+  position:relative;
+  transform:none !important;
+  margin-top:90px;
 }
 
 /******************************************
@@ -1001,6 +1001,31 @@ EBBINGHAUS
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
+.triangle-bisection-image {
+  position:relative;
+  transform:none !important;
+  margin-top:90px;
+}
+
+.play-icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 85px 0 85px 147.2px;
+  border-color: transparent transparent transparent #c5e4e8;
+  position:absolute;
+  z-index:5;
+  top:285px;
+  left:210px;
+}
+
+.modal-content-triangle:hover .play-icon {
+  transform: translateX(12%);
+  transition-duration: 2s;
+}
+
+
 
 
 /******************************************
@@ -1032,8 +1057,24 @@ EBBINGHAUS
 }
 
 .zollner-image {
-  width:390px;
-  height:390px;
+  width:450px;
+  height:450px;
+  position:relative;
+  transform:none !important;
+  margin-top:90px;
+}
+
+.primary {
+  width:450px;
+  height:450px;
+  position:relative;
+  transform:none !important;
+  margin-top:90px;
+}
+
+.secondary {
+  width:450px;
+  height:450px;
   position:relative;
   transform:none !important;
   margin-top:90px;
@@ -1053,6 +1094,22 @@ EBBINGHAUS
   z-index: 3;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.primary {
+  width:390px;
+  height:390px;
+  position:relative;
+  transform:none !important;
+  margin-top:90px;
+}
+
+.secondary {
+  width:390px;
+  height:390px;
+  position:relative;
+  transform:none !important;
+  margin-top:90px;
 }
 
 /******************************************
@@ -1270,7 +1327,7 @@ EBBINGHAUS
   width: 100%;
   margin: 100px 100px;
   text-align: center;
-  padding-left:50px;
+  padding-left:80px;
 }
 
 /* buttons */
@@ -1322,13 +1379,11 @@ EBBINGHAUS
     background: #4b4b4a;
 }
 
-
-
 .copyright {
-  margin-left:60px;
-  margin-top:50px;
   font-family: 'Lato', sans-serif;
   color:#4b4b4a;
+  position:absolute;
+  bottom:1px;
 }
 
 /******************************************

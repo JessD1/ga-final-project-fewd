@@ -158,6 +158,20 @@ $("[data-morphing]").fancyMorph({
 });
 
 
-// sharing buttons //
+// image swap //
+
+function showSecondary() {
+  var $this = $(this);
+  $this.find('.primary').css('display', 'none');
+  $this.find('.secondary').css('display', 'inline-block');
+}
+function showPrimary() {
+  var $this = $(this);
+  $this.find('.primary').css('display', 'inline-block');
+  $this.find('.secondary').css('display', 'none');
+}
+
+
+$('.image-container').hover(showSecondary, showPrimary);
 
 
